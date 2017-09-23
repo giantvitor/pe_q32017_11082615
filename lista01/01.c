@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 int main() {
-	int valor;
-	printf("Entre com um valor: ");
-	scanf("%d", &valor);
+    int valor;
+    scanf("%d", &valor);
+    if((valor%2) == 0) {
+        printf("par\n");
+    } else {
+        printf("impar\n");
+    }
 
-	if((valor%2) == 0) {
-		printf("Numero e par\n");
-	} else { 
-		printf("Numero e impar\n");
-	}
-
-	return 0;
+   return 0;
 
 }
